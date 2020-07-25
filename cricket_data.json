@@ -1,0 +1,44 @@
+{
+    "cricketersData" : [
+        {
+            "id": 2,
+            "name": "Johnty Rhodes",
+            "country": "South Africa",
+            "type": "Batsman",
+            "batting_average": 30.15,
+            "bowling_average": 50.08
+        },
+        {
+            "id": 3,
+            "name": "Brett Lee",
+            "country": "Australia",
+            "type": "Bowler",
+            "batting_average": 10.20,
+            "bowling_average": 12.50
+        },
+        {
+            "id": 4,
+            "name": "Ian Botham",
+            "country": "England",
+            "type": "All Rounder",
+            "batting_average": 35.35,
+            "bowling_average": 12.05
+        },
+        {
+            "id": 5,
+            "name": "Brian Lara",
+            "country": "West Indies",
+            "type": "Batsman",
+            "batting_average": 45.49,
+            "bowling_average": 40.20
+        },
+        {
+            "id": 6,
+            "name": "Kane Williamson",
+            "country": "New Zealand",
+            "type": "Batsman",
+            "batting_average": 50.25,
+            "bowling_average": 35.08
+        }
+    ]
+}
