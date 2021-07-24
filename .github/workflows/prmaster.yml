@@ -1,0 +1,13 @@
+name: 'Pull request in Master'
+on:  
+  pull_request:
+    branches:
+      - master      
+jobs:
+  triage:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/labeler@v3
+        with:
+          CONFLICT_LABEL_NAME: 'selected master'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
