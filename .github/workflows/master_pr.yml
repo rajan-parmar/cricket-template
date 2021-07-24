@@ -3,6 +3,7 @@ on:
   pull_request_target:
     branches:
       - master // destination branch where this workflow will trigger
+      - main
 
 jobs:
   label:
