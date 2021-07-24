@@ -11,9 +11,4 @@ jobs:
       - uses: mschilde/auto-label-merge-conflicts@master
         with:          
             CONFLICT_LABEL_NAME: 'selected master'
-            repo-token: "${{ secrets.GITHUB_TOKEN }}"
-   
-      
-    
-      
-        
+            repo-token: "${{ secrets.GITHUB_TOKEN }}"       
