@@ -5,8 +5,7 @@ on:
       - '**'
   pull_request:
     branches:
-      - 'master'
-      - 'main'
+      - 'master'   
 jobs:
   triage:
     runs-on: ubuntu-latest    
