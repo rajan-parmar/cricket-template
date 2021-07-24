@@ -9,7 +9,8 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v3
+    - name: Labeler
+      uses: actions/labeler@v3
       with:
         CONFLICT_LABEL_NAME: 'selected master'
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
