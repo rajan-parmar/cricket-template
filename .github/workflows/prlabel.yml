@@ -10,4 +10,5 @@ jobs:
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
           CONFLICT_LABEL_NAME: 'has conflicts'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}               
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
