@@ -1,11 +1,11 @@
 name: 'Check for merge conflicts'
 on:
   push:
-    branches-ignore:
+    branches:
       - 'main'
   pull_request:
     branches:
-      - 'main'   
+      - '!main'   
 jobs:
   triage:
     runs-on: ubuntu-latest    
