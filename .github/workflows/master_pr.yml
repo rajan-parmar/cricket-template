@@ -1,6 +1,6 @@
 name: Pull Request in master
 on: 
-  pull_request:
+  pull_request_target:
     branches:
       - master // destination branch where this workflow will trigger
 
