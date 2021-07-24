@@ -1,15 +1,15 @@
-name: Pull Request in master
+name: 'Pull request in Master'
 on:  
   pull_request:
     branches:
-      - main
       - master
+      - main
 jobs:
-  label:
-    runs-on: ubuntu-latest
+  triage:
+    runs-on: ubuntu-latest    
     steps:
-    - uses: mschilde/auto-label-merge-conflicts@master
-      with:
+      - uses: mschilde/auto-label-merge-conflicts@master
+        with:
           CONFLICT_LABEL_NAME: 'selected master'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
