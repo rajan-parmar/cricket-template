@@ -1,9 +1,8 @@
 name: Pull Request in master
-on: 
+on:  
   pull_request:
     branches:
-      - master // destination branch where this workflow will trigger
-      - main
+      - master   
 jobs:
   label:
     runs-on: ubuntu-latest
