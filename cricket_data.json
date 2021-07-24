@@ -39,6 +39,14 @@
             "type": "Batsman",
             "batting_average": 50.25,
             "bowling_average": 35.08
+        },
+        {
+            "id": 7,
+            "name": "virendra sehvag",
+            "country": "India",
+            "type": "Batsman",
+            "batting_average": 50.25,
+            "bowling_average": 35.08
         }
     ]
 }
