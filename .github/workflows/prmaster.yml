@@ -3,15 +3,14 @@ on:
   pull_request:
     branches:
       - master
-      - develop
+      - main
 jobs:
   triage:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
     steps:
-      - uses: abc/abc@master
-        with:
-            CONFLICT_LABEL_NAME: 'selected master'
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/labeler@v3
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
    
       
     
