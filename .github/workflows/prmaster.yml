@@ -6,13 +6,12 @@ on:
       - develop
 jobs:
   triage:
-    if: ${{ github.event.pull_request.base.ref == 'master' }}
     runs-on: ubuntu-latest    
     steps:
-      - uses: mschilde/auto-label-merge-conflicts@master
+      - uses: abc/abc@master
         with:
-          CONFLICT_LABEL_NAME: 'selected master'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            CONFLICT_LABEL_NAME: 'selected master'
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    
       
     
