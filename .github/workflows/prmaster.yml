@@ -2,7 +2,8 @@ name: Pull Request in master
 on:  
   pull_request:
     branches:
-      - main   
+      - main
+      - master
 jobs:
   label:
     runs-on: ubuntu-latest
