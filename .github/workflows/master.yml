@@ -4,7 +4,6 @@ on:
     branches:
       - master // destination branch where this workflow will trigger
       - main
-
 jobs:
   label:
     runs-on: ubuntu-latest
