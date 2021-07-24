@@ -39,6 +39,14 @@
             "type": "Batsman",
             "batting_average": 50.25,
             "bowling_average": 35.08
+        },
+        {
+            "id": 7,
+            "name": "Rajan Parmar",
+            "country": "Rajkot",
+            "type": "Batsman",
+            "batting_average": 50.25,
+            "bowling_average": 35.08
         }
     ]
 }
