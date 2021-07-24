@@ -5,13 +5,14 @@ on:
       - '**'
   pull_request:
     branches:
-      - '**'
+      - 'master'
+      - 'main'
 jobs:
   triage:
     runs-on: ubuntu-latest    
     steps:
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
-          CONFLICT_LABEL_NAME: 'has conflicts'
+          CONFLICT_LABEL_NAME: 'selected master'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
