@@ -8,8 +8,8 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-    - name: Labeler
-      uses: actions/labeler@v3
+    - uses: mschilde/auto-label-merge-conflicts@master
       with:
-        CONFLICT_LABEL_NAME: 'selected master'
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFLICT_LABEL_NAME: 'selected master'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
