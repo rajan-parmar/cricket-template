@@ -7,17 +7,6 @@ on:
     branches:
       - '**'   
 jobs:
-  Job1:
-    name: Base_Branch_Master_Selected_Label
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: mschilde/auto-label-merge-conflicts@master
-        with:
-          if: ${{ github.base_sha == 'master' }}
-#           if: github.event.pull_request.base.sha == 'master'
-          CONFLICT_LABEL_NAME: 'selected master'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Job2:
     name: Merge_Conflict_label
     runs-on: ubuntu-latest    
@@ -26,13 +15,7 @@ jobs:
         with:
           CONFLICT_LABEL_NAME: 'has conflicts'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  Job3:    
-    name: PR Branch Labeler
-    runs-on: ubuntu-latest 
-    steps:
-      - uses: ffittschen/pr-branch-labeler@v1
-        with:
-          # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+  
+          
 
 
