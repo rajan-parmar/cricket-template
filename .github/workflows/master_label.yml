@@ -1,5 +1,8 @@
 name: 'Base_Branch_Master_Selected_Label'
 on:
+  push:
+    branches:
+      - '**'
   pull_request:
     branches:
       - master   
