@@ -7,12 +7,21 @@ on:
     branches:
       - '**'   
 jobs:
-  triage:
+  Job1:
+    name: Base_Branch_Master_Selected_Label
     runs-on: ubuntu-latest    
     steps:
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
-          if: github.event.pull_request.base.ref == 'master'           
+          if: ${{ github.base_ref == 'main' }}           
           CONFLICT_LABEL_NAME: 'selected master'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  Job2:
+    name: Merge_Conflict_label
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: mschilde/auto-label-merge-conflicts@master
+        with:
+          CONFLICT_LABEL_NAME: 'has conflicts'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
