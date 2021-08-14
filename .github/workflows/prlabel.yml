@@ -27,11 +27,12 @@ jobs:
           CONFLICT_LABEL_NAME: 'has conflicts'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Job3:    
-    name: Pull Request Labeller
-    runs-on: ubuntu-latest
+    name: PR Branch Labeler
+    runs-on: ubuntu-latest 
     steps:
-      - uses: GingertronMk1/pull-request-labeler@v3
-        with:          
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: ffittschen/pr-branch-labeler@v1
+        with:
+          # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 
