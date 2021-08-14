@@ -9,8 +9,9 @@ on:
 jobs:
   Job1:
     name: Base_Branch_Master_Selected_Label
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
           if: ${{ github.base_ref == 'master' }}
