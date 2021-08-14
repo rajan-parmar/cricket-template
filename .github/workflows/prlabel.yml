@@ -13,7 +13,8 @@ jobs:
     steps:
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
-          if: ${{ github.base_ref == 'main' }}           
+#           if: ${{ github.base_ref == 'main' }}
+          if: github.event.pull_request.base.ref == 'master'
           CONFLICT_LABEL_NAME: 'selected master'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Job2:
