@@ -30,7 +30,8 @@ jobs:
     name: Current Branch
     runs-on: ubuntu-latest
     steps:
-      - uses: ryolambert/current-branch@v1.0
-        with: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Current Branch
+      # You may pin to the exact commit or the version.
+      # uses: ryolambert/current-branch@e8b56c41a563d56e7e73d369f2ed742a6f37bf97
+        uses: ryolambert/current-branch@v1.0
 
