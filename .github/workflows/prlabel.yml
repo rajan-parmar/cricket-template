@@ -31,4 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: ryolambert/current-branch@v1.0
+        with: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
