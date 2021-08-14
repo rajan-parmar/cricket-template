@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: mschilde/auto-label-merge-conflicts@master
         with:
-          if: ${{ github.base_ref == 'master' }}
-#           if: github.event.pull_request.base.ref == 'master'
+#           if: ${{ github.base_ref == 'master' }}
+          if: github.event.pull_request.base.ref == 'master'
           CONFLICT_LABEL_NAME: 'selected master'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Job2:
